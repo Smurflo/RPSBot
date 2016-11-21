@@ -1,0 +1,72 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ddd;
+}
+
+body#dashboardPage {
+    background-color: #fff;
+    padding-top: 60px;
+}
+
+.signin-form {
+    background: #fff;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.homepage footer {
+    padding: 10px 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-center {
+    float: none;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    right: 0;
+    left: 0;
+    height: 20px;
+    margin: auto;
+    width: 30px;
+}
+
+.navbar-inverse .navbar-center,
+.navbar-inverse .navbar-center a {
+    color: #fff;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    z-index: 1;
+}
+
+#resourceTitleAutoComplete,
+#resourceAuthorAutoComplete {
+    background-color: #fff;
+    position: absolute;
+    color: #000;
+    z-index: 99;
+    list-style: none;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.error-message.bad {
+    background: #faa5a5;
+    border: 2px solid red;
+    visibility: visible;
+}
+
+.error-message.good {
+    background: #a5faa5;
+    border: 2px solid green;
+    visibility: visible;
+}
+
+.error-message.info {
+    background: #a5a5fa;
+    border: 2px solid blue;
+    visibility: visible;
+}

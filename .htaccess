@@ -1,0 +1,31 @@
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# RewriteBase /
+
+# Cross domain access
+# TODO: figure out how to uncomment these headers?
+# Header add Access-Control-Allow-Origin "*"
+# Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+# Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Make sure any folders without an index.php file don't show the directory hiearchy
+Options -Indexes
+
+# Make sure no-one can view the README file
+<files README.md>
+order allow,deny
+deny from all
+</files>
+
+# Make sure all files named "credentials" are not allowed access.
+<files credentials>
+order allow,deny
+deny from all
+</files>

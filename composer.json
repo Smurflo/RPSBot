@@ -1,0 +1,9 @@
+{
+  "name": "chronos",
+  "require": {
+    "slim/slim": "*",
+    "slim/extras": "*",
+    "twig/twig": "*",
+    "aws/aws-sdk-php": "2.*"
+  }
+}

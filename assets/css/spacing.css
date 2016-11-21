@@ -1,0 +1,167 @@
+/** 
+ * Spacing classes 
+ * Should be used to modify the default spacing between objects (not between nodes of the same object)
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions! 
+ * <type><location><size>
+ */
+ /* ====== Default spacing ====== */
+/*h1, h2, h3, h4, h5, h6, ul, ol,dl, p,blockquote, .media {margin:10px;}
+h1, h2, h3, h4, h5, h6,img{padding-bottom:0;}
+pre{margin: 10px;}
+table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl{padding:0;}*/
+ 
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+*/
+
+.m0a { margin: 0 auto }
+
+.pt0, .pv0, .pa0 { padding-top: 0 !important }
+.pt1px, .pv1px, .pa1px { padding-top: 1px !important }
+.pt2px, .pv2px, .pa2px { padding-top: 2px !important }
+.pt3px, .pv3px, .pa3px { padding-top: 3px !important }
+.pt5px, .pv5px, .pa5px { padding-top: 5px !important }
+.pt10px, .pv10px, .pa10px { padding-top: 10px !important }
+.pt15px, .pv15px, .pa15px { padding-top: 15px !important }
+.pt20px, .pv20px, .pa20px { padding-top: 20px !important }
+.pr0, .ph0, .pa0 { padding-right: 0 !important }
+.pr1px, .ph1px, .pa1px { padding-right: 1px !important }
+.pr2px, .ph2px, .pa2px { padding-right: 2px !important }
+.pr3px, .ph3px, .pa3px { padding-right: 3px !important }
+.pr5px, .ph5px, .pa5px { padding-right: 5px !important }
+.pr10px, .ph10px, .pa10px { padding-right: 10px !important }
+.pr15px, .ph15px, .pa15px { padding-right: 15px !important }
+.pr20px, .ph20px, .pa20px { padding-right: 20px !important }
+.pb0, .pv0, .pa0 { padding-bottom: 0 !important }  
+.pb1px, .pv1px, .pa1px { padding-bottom: 1px !important }
+.pb2px, .pv2px, .pa2px { padding-bottom: 2px !important }
+.pb3px, .pv3px, .pa3px { padding-bottom: 3px !important }
+.pb5px, .pv5px, .pa5px { padding-bottom: 5px !important }
+.pb10px, .pv10px, .pa10px { padding-bottom: 10px !important }
+.pb15px, .pv15px, .pa15px { padding-bottom: 15px !important }
+.pb20px, .pv20px, .pa20px { padding-bottom: 20px !important }
+.pl0, .ph0, .pa0 { padding-left: 0 !important }
+.pl1px, .ph1px, .pa1px { padding-left: 1px !important }
+.pl2px, .ph2px, .pa2px { padding-left: 2px !important }
+.pl3px, .ph3px, .pa3px { padding-left: 3px !important }
+.pl5px, .ph5px, .pa5px { padding-left: 5px !important }
+.pl10px, .ph10px, .pa10px { padding-left: 10px !important }
+.pl15px, .ph15px, .pa15px { padding-left: 15px !important }
+.pl20px, .ph20px, .pa20px { padding-left: 20px !important }
+.mt0, .mv0, .ma0 { margin-top: 0 !important }
+.mt1px, .mv1px, .ma1px { margin-top: 1px !important }
+.mt2px, .mv2px, .ma2px { margin-top: 2px !important }
+.mt3px, .mv3px, .ma3px { margin-top: 3px !important }
+.mt5px, .mv5px, .ma5px { margin-top: 5px !important }
+.mt10px, .mv10px, .ma10px { margin-top: 10px !important }
+.mt15px, .mv15px, .ma15px { margin-top: 15px !important }
+.mt20px, .mv20px, .ma20px { margin-top: 20px !important }
+.mr0, .mh0, .ma0 { margin-right: 0 !important }
+.mr1px, .mh1px, .ma1px { margin-right: 1px !important }
+.mr2px, .mh2px, .ma2px { margin-right: 2px !important }
+.mr3px, .mh3px, .ma3px { margin-right: 3px !important }
+.mr5px, .mh5px, .ma5px { margin-right: 5px !important }
+.mr10px, .mh10px, .ma10px { margin-right: 10px !important }
+.mr15px, .mh15px, .ma15px { margin-right: 15px !important }
+.mr20px, .mh20px, .ma20px { margin-right: 20px !important }
+.mb0, .mv0, .ma0 { margin-bottom: 0 !important }  
+.mb1px, .mv1px, .ma1px { margin-bottom: 1px !important }
+.mb2px, .mv2px, .ma2px { margin-bottom: 2px !important }
+.mb3px, .mv3px, .ma3px { margin-bottom: 3px !important }
+.mb5px, .mv5px, .ma5px { margin-bottom: 5px !important }
+.mb10px, .mv10px, .ma10px { margin-bottom: 10px !important }
+.mb15px, .mv15px, .ma15px { margin-bottom: 15px !important }
+.mb20px, .mv20px, .ma20px { margin-bottom: 20px !important }
+.ml0, .mh0, .ma0 { margin-left: 0 !important }
+.ml1px, .mh1px, .ma1px { margin-left: 1px !important }
+.ml2px, .mh2px, .ma2px { margin-left: 2px !important }
+.ml3px, .mh3px, .ma3px { margin-left: 3px !important }
+.ml5px, .mh5px, .ma5px { margin-left: 5px !important }
+.ml10px, .mh10px, .ma10px { margin-left: 10px !important }
+.ml15px, .mh15px, .ma15px { margin-left: 15px !important }
+.ml20px, .mh20px, .ma20px { margin-left: 20px !important }
+.mra, .mha { margin-right: auto !important }
+.mla, .mha { margin-left: auto !important }
+
+.pt25e, .pv25e, .pa25e { padding-top: .25em !important }
+.pt50e, .pv50e, .pa50e { padding-top: .5em !important }
+.pt75e, .pv75e, .pa75e { padding-top: .75em !important }
+.pt100e, .pv100e, .pa100e { padding-top: 1em !important }
+.pt125e, .pv125e, .pa125e { padding-top: 1.25em !important }
+.pt150e, .pv150e, .pa150e { padding-top: 1.5em !important }
+.pt200e, .pv200e, .pa200e { padding-top: 2em !important }
+.pt250e, .pv250e, .pa250e { padding-top: 2.5em !important }
+.pt300e, .pv300e, .pa300e { padding-top: 3em !important }
+.pt400e, .pv400e, .pa400e { padding-top: 4em !important }
+.pr25e, .ph25e, .pa25e { padding-right: .25em !important }
+.pr50e, .ph50e, .pa50e { padding-right: .5em !important }
+.pr75e, .ph75e, .pa75e { padding-right: .75em !important }
+.pr100e, .ph100e, .pa100e { padding-right: 1em !important }
+.pr125e, .ph125e, .pa125e { padding-right: 1.25em !important }
+.pr150e, .ph150e, .pa150e { padding-right: 1.5em !important }
+.pr200e, .ph200e, .pa200e { padding-right: 2em !important }
+.pr250e, .ph250e, .pa250e { padding-right: 2.5em !important }
+.pr300e, .ph300e, .pa300e { padding-right: 3em !important }
+.pr400e, .ph400e, .pa400e { padding-right: 4em !important }
+.pb25e, .pv25e, .pa25e { padding-bottom: .25em !important }
+.pb50e, .pv50e, .pa50e { padding-bottom: .5em !important }
+.pb75e, .pv75e, .pa75e { padding-bottom: .75em !important }
+.pb100e, .pv100e, .pa100e { padding-bottom: 1em !important }
+.pb125e, .pv125e, .pa125e { padding-bottom: 1.25em !important }
+.pb150e, .pv150e, .pa150e { padding-bottom: 1.5em !important }
+.pb200e, .pv200e, .pa200e { padding-bottom: 2em !important }
+.pb250e, .pv250e, .pa250e { padding-bottom: 2.5em !important }
+.pb300e, .pv300e, .pa300e { padding-bottom: 3em !important }
+.pb400e, .pv400e, .pa400e { padding-bottom: 4em !important }
+.pl25e, .ph25e, .pa25e { padding-left: .25em !important }
+.pl50e, .ph50e, .pa50e { padding-left: .5em !important }
+.pl75e, .ph75e, .pa75e { padding-left: .75em !important }
+.pl100e, .ph100e, .pa100e { padding-left: 1em !important }
+.pl125e, .ph125e, .pa125e { padding-left: 1.25em !important }
+.pl150e, .ph150e, .pa150e { padding-left: 1.5em !important }
+.pl200e, .ph200e, .pa200e { padding-left: 2em !important }
+.pl250e, .ph250e, .pa250e { padding-left: 2.5em !important }
+.pl300e, .ph300e, .pa300e { padding-left: 3em !important }
+.pl400e, .ph400e, .pa400e { padding-left: 4em !important }
+.mt25e, .mv25e, .ma25e { margin-top: .25em !important }
+.mt50e, .mv50e, .ma50e { margin-top: .5em !important }
+.mt75e, .mv75e, .ma75e { margin-top: .75em !important }
+.mt100e, .mv100e, .ma100e { margin-top: 1em !important }
+.mt125e, .mv125e, .ma125e { margin-top: 1.25em !important }
+.mt150e, .mv150e, .ma150e { margin-top: 1.5em !important }
+.mt200e, .mv200e, .ma200e { margin-top: 2em !important }
+.mt250e, .mv250e, .ma250e { margin-top: 2.5em !important }
+.mt300e, .mv300e, .ma300e { margin-top: 3em !important }
+.mt400e, .mv400e, .ma400e { margin-top: 4em !important }
+.mr25e, .mh25e, .ma25e { margin-right: .25em !important }
+.mr50e, .mh50e, .ma50e { margin-right: .5em !important }
+.mr75e, .mh75e, .ma75e { margin-right: .75em !important }
+.mr100e, .mh100e, .ma100e { margin-right: 1em !important }
+.mr125e, .mh125e, .ma125e { margin-right: 1.25em !important }
+.mr150e, .mh150e, .ma150e { margin-right: 1.5em !important }
+.mr200e, .mh200e, .ma200e { margin-right: 2em !important }
+.mr250e, .mh250e, .ma250e { margin-right: 2.5em !important }
+.mr300e, .mh300e, .ma300e { margin-right: 3em !important }
+.mr400e, .mh400e, .ma400e { margin-right: 4em !important }
+.mb25e, .mv25e, .ma25e { margin-bottom: .25em !important }
+.mb50e, .mv50e, .ma50e { margin-bottom: .5em !important }
+.mb75e, .mv75e, .ma75e { margin-bottom: .75em !important }
+.mb100e, .mv100e, .ma100e { margin-bottom: 1em !important }
+.mb125e, .mv125e, .ma125e { margin-bottom: 1.25em !important }
+.mb150e, .mv150e, .ma150e { margin-bottom: 1.5em !important }
+.mb200e, .mv200e, .ma200e { margin-bottom: 2em !important }
+.mb250e, .mv250e, .ma250e { margin-bottom: 2.5em !important }
+.mb300e, .mv300e, .ma300e { margin-bottom: 3em !important }
+.mb400e, .mv400e, .ma400e { margin-bottom: 4em !important }
+.ml25e, .mh25e, .ma25e { margin-left: .25em !important }
+.ml50e, .mh50e, .ma50e { margin-left: .5em !important }
+.ml75e, .mh75e, .ma75e { margin-left: .75em !important }
+.ml100e, .mh100e, .ma100e { margin-left: 1em !important }
+.ml125e, .mh125e, .ma125e { margin-left: 1.25em !important }
+.ml150e, .mh150e, .ma150e { margin-left: 1.5em !important }
+.ml200e, .mh200e, .ma200e { margin-left: 2em !important }
+.ml250e, .mh250e, .ma250e { margin-left: 2.5em !important }
+.ml300e, .mh300e, .ma300e { margin-left: 3em !important }
+.ml400e, .mh400e, .ma400e { margin-left: 4em !important }
