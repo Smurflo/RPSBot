@@ -18,7 +18,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo $homeUrl; ?>">Base Template</a>
+            <a class="navbar-brand" href="<?php echo $homeUrl; ?>">RPSBot</a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">

@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="google-site-verification" content="LGiZH7XNBIS_Z7qJywaGuLULCYx6C1NvkpX0LoY_ryI" />
+<!--    <meta name="google-site-verification" content="LGiZH7XNBIS_Z7qJywaGuLULCYx6C1NvkpX0LoY_ryI" />-->
 
-    <title>Base Template</title>
+    <title>RPSBot</title>
     <?php /* Stylesheets here */ ?>
     <link href="<?=$baseUrl . '/assets/images/favicon.ico'?>" rel="icon">
     <link href="<?=$baseUrl . '/assets/css/bootstrap.min.css'; ?>" rel="stylesheet" type="text/css">

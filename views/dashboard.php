@@ -10,39 +10,24 @@
 <?php include '/partials/header.php'  ?>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>Title!</h1>
-        <p>
-            This site is meant as a starting point for future projects.
-            This way you don't need to start from scratch every time you have an idea!
-            Now you can be productive instead of worrying about the whole 'set up' part.
-            Good Luck!
-        </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
-</div>
+<h1 class="dashboardTitle">Let's Play Some Rock-Paper-Scissors!</h1>
 
-<div class="container">
+
+<div class="container game">
     <!-- Example row of columns -->
     <div class="row">
-        <div class="col-md-4">
-            <h2>Page 1</h2>
-            <a href="<?php echo $baseUrl; ?>/page1">Page1</a>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-4 col-md-offset-1 userMove selection">
+            <h2 class="text-center">You</h2>
+            <div class="row actionDiv">
+                <a class="btn actionBtn userRock"><img class="actionPic" src="<?php echo $baseUrl; ?>/assets/images/rock.png"></a>
+                <a class="btn actionBtn userPaper"><img class="actionPic" src="<?php echo $baseUrl; ?>/assets/images/paper.png"></a>
+                <a class="btn actionBtn userScissors"><img class="actionPic" src="<?php echo $baseUrl; ?>/assets/images/scissors.png"></a>
+            </div>
+
         </div>
-        <div class="col-md-4">
-            <h2>Page 2</h2>
-            <a href="<?php echo $baseUrl; ?>/page2">Page1</a>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Page 3</h2>
-            <a href="<?php echo $baseUrl; ?>/page3">Page1</a>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-4 col-md-offset-2 userMove selection">
+            <h2>Computer</h2>
+            <p><img class="computerStatus col-md-12" src="<?php echo $baseUrl; ?>/assets/images/ready.png"</p>
         </div>
     </div>
 </div>

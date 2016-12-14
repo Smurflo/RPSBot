@@ -1,3 +1,41 @@
+.dashboardTitle {
+    text-align: center;
+}
+
+.game {
+    text-align: center;
+}
+
+.userMove {
+    background-color: lightcyan;
+    border-style: solid;
+    text-align: center;
+}
+
+.actionBtn {
+    background-color: white;
+}
+
+.actionPic {
+    height: 85px;
+    width: 85px;
+}
+
+.actionDiv {
+    padding-bottom: 15px;
+}
+
+.selection {
+    height: 215px;
+}
+
+.computerStatus {
+
+}
+
+
+
+/*Potentially useful, but old*/
 body {
     padding-top: 40px;
     padding-bottom: 40px;

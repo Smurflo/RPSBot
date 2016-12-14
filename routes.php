@@ -2,8 +2,8 @@
 
 //Pages
 $app->get('/', function() use ($app) {
-    $app->render('home.php');
-})->name('home');
+    $app->render('dashboard.php');
+})->name('dashboard');
 
 $app->post('/login(/)', function() use ($app) {
     require_once './controllers/login.php' ;
