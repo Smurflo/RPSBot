@@ -2,7 +2,7 @@
 
 //Pages
 $app->get('/', function() use ($app) {
-    $app->render('dashboard.php');
+    $app->render('dashboard.php', array('page' => 'dashboard'));
 })->name('dashboard');
 
 $app->post('/login(/)', function() use ($app) {

@@ -4,4 +4,6 @@
 <script type="text/javascript">
     var baseUrl = '<?=$baseUrl; ?>';
     var page = '<?=$page; ?>';
+    var moves = ["rock", "paper", "scissors"];
+    var comMove = "";
 </script>
